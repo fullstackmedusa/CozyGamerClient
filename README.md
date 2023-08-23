@@ -17,5 +17,22 @@ Welcome to the Cozy Gamer Collection App! This React-based application is design
 Follow these steps to get started with the Cozy Gamer Collection App:
 
 1. **Clone the Repository:** Clone this repository to your local machine using your preferred method.
-   ```bash
+   ``````
    git clone https://github.com/fullstackmedusa/cozy-gamer-app.git
+## Run the App
+Start the development server to run the app locally.
+
+```
+npm start   # or yarn start
+```
+## Access the App
+Open your web browser and go to http://localhost:3000 to access the Cozy Gamer Collection App.
+
+## Contributing
+We welcome contributions from the community to make the Cozy Gamer Collection App even better! If you'd like to contribute, please follow our Contribution Guidelines.
+
+## Feedback and Support
+If you encounter any issues, have suggestions for improvements, or need assistance, please open an issue. We're here to help!
+
+## License
+This project is licensed under the MIT License, which means you are free to use, modify, and distribute the code as you see fit.
