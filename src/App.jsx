@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import MainContent from './Components/MainContent';
-import DetailsPage from './Components/DetailsPage'; // Import the DetailsPage component
+import HomePage from './PageComponents/HomePage';
+import DetailsPage from './PageComponents/DetailsPage';
 import './App.css';
 
 const App = () => {
@@ -42,31 +42,32 @@ const App = () => {
     description: 'Description for Game Title 1...' }
  ];
 
-  return (
-    
-      <div className="container">
-        <Header />
-      
-      <main className="main">
-        <Routes>
-          <Route
-            path="/"
-            element={<MainContent cardData={cardData} />} // Pass cardData to MainContent
-          />
-          <Route
-            path="/details/:id"
-            element={<DetailsPage cardData={cardData} />} // Pass cardData to DetailsPage
-          />
-        </Routes>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-      </div>
-  );
+ 
+ return (
+  <div className="container">
+    <Header />
+    <main className="main">
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage cardData={cardData} />}
+        />
+        <Route
+          path="/details/:id"
+          element={<DetailsPage cardData={cardData} />}
+        />
+      </Routes>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </div>
+);
 };
 
 export default App;
+
+
 
 
 
