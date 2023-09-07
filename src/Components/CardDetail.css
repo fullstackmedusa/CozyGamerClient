@@ -1,0 +1,45 @@
+.custom-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 0; /* Remove padding to make all cards the same height */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Vertically align content evenly */
+    align-items: center;
+    height: 400px; /* Set a fixed height for the card container */
+    width: 300px; /* Set a fixed width for the card container */
+    background-color: white;
+    border: 30px solid pink;
+  }
+  
+  .card-image {
+    padding: 10%;
+    width: 100%; /* Make the image occupy the full width of the card */
+    max-height: 150px; /* Limit the maximum height */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+    background-color: white;
+    width: -webkit-fill-available;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .card-meta {
+    color: #888;
+    font-size: 1rem;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+  }
+  
